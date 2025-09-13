@@ -5,6 +5,316 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./flowers_files/fl.css">
+	<style>* {
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  /* background-image: url(container.jpg); */
+  /* background-color: rgb(207, 235, 245); */
+  /* background-color: lightpink; */
+  background-image: url(background2.jpg);
+  height: 100vh;
+  /* width: 100vw; */
+  overflow: hidden;
+  border: 2px solid lightblue;
+  border-radius: 20px;
+  width: 100%;
+}
+#header {
+  border: 2px solid rgb(14, 27, 32);
+  background-color: #fedbe2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px grey;
+}
+#name {
+  font-family: cursive;
+  font-size: 30px;
+  display: flex;
+
+  padding: 10px;
+}
+#dot {
+  color: rgb(225, 15, 151);
+  font-size: 30px;
+}
+a {
+  text-decoration: none;
+  /* color: grey; */
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-family: cursive;
+  font-size: 20px;
+}
+.elements {
+  margin: 15px;
+  color: grey;
+}
+.elements:hover {
+  transform: scale(1.5);
+  color: black;
+  transition: all 1s ease-in-out 0s;
+}
+.icons {
+  /* width: 10%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+  gap: 30px;
+}
+.c:hover {
+  color: red;
+}
+#bg {
+  height: 110%;
+  width: 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.main {
+  background-image: url(background2.jpg);
+  background-size: cover;
+  /* background-color: rgb(235, 116, 156); */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 150px;
+}
+button {
+  margin: 10px;
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: black;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  box-shadow: 5px 5px 5px grey;
+}
+.container2 {
+  padding: 10px;
+  margin-bottom: 40px;
+  height: 98vh;
+  /* width: 100vw; */
+  width: 100%;
+  /* background-image: url(background2.jpg); */
+  border-radius: 20px;
+}
+h1 {
+  height: fit-content;
+  width: 90%;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 35px;
+  padding-top: 20px;
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.about {
+  display: flex;
+  flex: row;
+  align-items: center;
+  padding: 30px;
+}
+video {
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+}
+.us {
+  padding: 20px;
+  margin: 10px;
+  gap: 20px;
+  line-height: 30px;
+}
+.others {
+  background-color: whitesmoke;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.shope {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(183, 183, 183);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  width: 200px;
+}
+.ion-icon {
+  font-size: 30px;
+}
+.shope:hover {
+  background-color: white;
+  transform: scale(1.3);
+  transition: all 0.3s ease-in 0s;
+  box-shadow: 5px 5px 5px grey;
+}
+video:hover {
+  background-color: rgb(179, 226, 245);
+  transform: scale(1.1);
+  transition: all 0.3s ease-in 0s;
+  border-radius: 30px;
+}
+hr {
+  box-shadow: 5px 5px 5px grey;
+}
+
+#tag {
+  height: 50px;
+  width: 100%;
+  /* padding-left: 70px;
+  padding-right: 70px; */
+  background-color: #fedbe2;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 90%;
+  align-self: center;
+}
+.products {
+  margin-left: 100px;
+  margin-right: 70px;
+  padding: 20px;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+}
+.product {
+  border: 5px solid lightpink;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px lightblue;
+}
+.img {
+  height: 250px;
+  width: 300px;
+  background-image: cover;
+}
+span {
+  margin: 5px;
+}
+.offprice {
+  text-decoration: line-through;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.offer {
+  align-self: flex-start;
+  padding-left: 10px;
+}
+img {
+  border-radius: 20px;
+}
+.product:hover {
+  background-color: #fedbe4;
+  transform: scale(1);
+  transition: all 0.3s ease-in 0s;
+}
+.container4 {
+  height: fit-content;
+  width: 98%;
+}
+.rev {
+  text-align: center;
+}
+.reviews {
+  padding: 20px;
+  margin-left: 40px;
+  display: flex;
+  height: 400px;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 30px;
+}
+.review {
+  border: 5px solid lightblue;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px lightpink;
+  margin-top: 50px;
+  height: fit-content;
+  width: fit-content;
+}
+.cus {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+}
+.names {
+  display: flex;
+  flex-direction: row;
+}
+.review:hover {
+  background-color: #fedbe4;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in 0s;
+}
+.contact {
+  height: 50px;
+  width: 90%;
+  background-color: #fedbe2;
+  padding: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  align-self: center;
+}
+.forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+}
+.form {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px lightblue;
+  border-radius: 35px;
+  justify-content: center;
+}
+.formpic {
+  height: 500px;
+  width: 500px;
+  box-shadow: 5px 5px 5px lightblue;
+}
+input {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "cursive";
+}
+</style>
   </head>
   <body>
     <div class="container">
